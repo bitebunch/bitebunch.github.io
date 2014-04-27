@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+    <title>Bite Bunch - Register</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/mentorhome.css" rel="stylesheet">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script type="text/javascript">
+
+    function Sign_Up()
+    {
+      Parse.initialize("ZiN4tR79WjbE3r3FchxAmrVdXFvpUkV5mfXjR4eT", "Tbq1vnh0XMGNk6qWWntCacMdiGtOjvQR3Ls1pKo7");
+
+    var user = new Parse.User();
+    
+    user.set("username", document.getElementById("name").value);
+    user.set("password", document.getElementById("password").value);
+    user.set("email", document.getElementById("email").value);
+    user.set("interests", document.getElementById("interests").value);
+    
+    user.signUp(null, {
+      success: function(user) {
+          alert("successfully signed up");
+      },
+      error: function(user, error) {
+      // Show the error message somewhere and let the user try again.
+      alert("Error: " + error.code + " " + error.message);}
+    });
+    }
+    </script>
+
+  </head>
+
+  <body>
+
+    
+
+    <div class="container">
+      <div class="header">
+       
+        <ul class="nav nav-pills bitenav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="createEvent.html">Create Event</a></li>
+          <li class="active"><a href="yourBiteBunch.html">Your BiteBunch</a></li>
+          <li><a href="logoff.html">Log Off</a></li>
+
+          
+            </ul>
+       
+      </div>
+
+      <div class="jumbotron">
+       <div id="photo">
+<center>
+<img style="width:60%;" />
+    <img src="images/girl_2.jpg" style="border-radius: 200px; width: 60%;">
+</div>
+</center>   
+<div id="login">
+<center><h2>Name: Ashanti Georgia</h2>
+ <form action="javascript:void(0);" method="POST">
+  
+    <h2 id = "schedule">Schedule</h2>
+    
+    </form>
+<form>
+        <fieldset>
+            <p>
+
+                           
+
+                <label>When do you want to grab a bite</label>
+                <br>
+                <select id="FirstDay">
+                    <option value="1">1 pm</option>
+                    <option value="2">2 pm</option>
+                    <option value="3">3 pm</option>
+                    <option value="4">4 pm</option>
+                </select>
+            </p>
+        </fieldset>
+    </form> 
+        </p>
+    </fieldset>
+</form> 
+
+<h2 id = "Contact">Interest</h2>
+
+
+<div id= "test" >
+    <table cellpadding="0" cellspacing="0">
+
+        <tr>
+            <td>
+                <h3><strong>Foods </strong></h3>
+            </td>
+            <td>
+                <h3><strong>Activities </strong></h3>
+            </td>
+        </tr> 
+
+        <form action=""> 
+            <tr>     
+                <td>
+                    <input type="checkbox" name="food" value="exotic food"> Exotic 
+                </td>
+                <td>
+                    <input type="checkbox" name="food" value="vegetarian"> Sports 
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="checkbox" name="food" value="chinese"> Chinese
+                </td>    
+
+                <td>
+                    <input type="checkbox" name="activites" value="movies"> Movies
+
+            </tr>    
+
+
+         <tr>
+                <td>
+                    <input type="checkbox" name="food" value="thai"> Thai
+                </td>
+                <td>
+                    <input type="checkbox" name="activiy" value="dancing"> Dancing
+                </td>
+        </tr>
+
+        <tr>
+
+                 <td>
+
+                    <input type="checkbox" name="Food" value="thai"> Indian 
+                
+                </td>
+
+                <td>
+
+                    <input type="checkbox" name="activiy" value="music"> Music 
+                
+                </td>
+
+
+
+
+
+        </tr>   
+
+
+
+         <tr>
+                <td>
+                    <input type="checkbox" name="food" value="italian"> Italian
+                </td>
+
+                 <td>
+                    <input type="checkbox" name="activity" value="nightlife"> Nightlife
+                </td>
+
+
+        </tr>
+
+
+    </form>
+
+
+
+    </table>
+</div>
+
+<div id = "bottomlast">
+<p>&copy by BiteBunch, 2014 </p>
+
+</div>
+      </div>
+  </body>
+</html>
+  

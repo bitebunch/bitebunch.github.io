@@ -1,0 +1,270 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  padding-bottom: 19px;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+
+
+/*THIS IS FOR PROFILE LOGIN CSS. USED FOR PROFILE HTML.*/
+
+
+
+
+
+@charset "utf-8";
+/* CSS Document */
+
+/* ---------- FONTAWESOME ---------- */
+/* ---------- http://fortawesome.github.com/Font-Awesome/ ---------- */
+/* ---------- http://weloveiconfonts.com/ ---------- */
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+/* ---------- ERIC MEYER'S RESET CSS ---------- */
+/* ---------- http://meyerweb.com/eric/tools/css/reset/ ---------- */
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+/* ---------- FONTAWESOME ---------- */
+
+[class*="fontawesome-"]:before {
+    font-family: 'FontAwesome', sans-serif;
+}
+
+/* ---------- GENERAL ---------- */
+
+body {
+    background-color: #ffffff;
+    background-color: #ffffff;
+    color: #000;
+    font-family: "Varela Round", Arial, Helvetica, sans-serif;
+    font-size: 50px;
+}
+input {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    -webkit-appearance: none;
+}
+
+#photo{
+border-radius: 50px !important;
+
+
+}
+
+
+
+
+
+/* ---------- LOGIN ---------- */
+
+
+#logoFirst{
+
+
+height: 300px;
+}
+
+
+
+#login {
+    margin: 50px auto;
+    width: 500px;
+    height: 100px;
+}
+
+#login h2 {
+    background-color: #0000ff;
+    -webkit-border-radius: 20px 20px 0 0;
+    -moz-border-radius: 20px 20px 0 0;
+    border-radius: 20px 20px 0 0;
+    color: #fff;
+    font-size: 40%;
+    height: 60px;
+    line-height: 60px;
+}
+
+#login h2 span[class*="fontawesome-"] {
+    margin-right: 14%;
+}
+
+#login fieldset {
+    background-color: #ffffff;
+    -webkit-border-radius: 0 0 20px 20px;
+    -moz-border-radius: 0 0 20px 20px;
+    border-radius: 0 0 20px 20px;
+    padding: 0;
+
+}
+
+#login fieldset p {
+    color: #777;
+    margin-bottom: 14px;
+    border-style: thick;
+}
+
+#login fieldset p:last-child {
+    margin-bottom: 0;
+}
+
+#login fieldset input {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border-style: thick;
+}
+
+#login fieldset input[type="email"], #login fieldset input[type="password"] {
+    background-color: #eee;
+    color: #777;
+    padding: 4px 10px;
+    width: 328px;
+}
+
+#login fieldset input[type="submit"] {
+    background-color: #33cc77;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    padding: 4px 0;
+    width: 100px;
+}
+
+#login fieldset input[type="submit"]:hover {
+    background-color: #28ad63;
+}
+
+#login fieldset input[type="email"], #login fieldset input[type="password"] {
+    background-color: #eee;
+    color: #777;
+    padding: 4px 10px;
+    width: 328px;
+}
+
+#secondday {
+    text-align: center;
+    text-decoration: none;
+    width: 328px;
+}
+
+#test  {
+
+  
+  font-size: 20px;
+  
+
+
+
+}
+
+#test2{
+
+
+  float: left;
+}
+
+#bottom {
+
+  
+  float: center;
+  
+
+
+}
+
+#bottomdiv{
+
+  font-size: 20px;
+
+}
+
+h3{
+
+font-size: left;
+
+}
+
+select {
+  width: 150px;
+}
+
+
